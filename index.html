@@ -11,7 +11,9 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置状态栏的背景颜色，启用webapp模式时生效 -->
 	<meta name="format-detection" content="telephone=no" /><!-- 禁止数字识别为电话号码 -->
 	<title></title>
-    <link rel="stylesheet" type="text/css" href="css/bass.css">
+    <link rel="stylesheet" type="text/css" href="css/amazeui.slick.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/bass.css">  
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -19,19 +21,89 @@
         <div class="header_wrap">
             <div class="logo"><img src="images/logo.png" alt="" title=""></div>
             <ul class="nav">
-                    <li>首页</li>
-                    <li>车辆定制</li>
-                    <li>车辆网产品</li>
-                    <li class="active">资产管理平台</li>
-                    <li>关于我们</li>
+                    <li><a href="#index_section" data-section="index_section" class="active">首页</a></li>
+                    <li><a href="#dingzhi_section" data-section="dingzhi_section">车辆定制</a></li>
+                    <li><a href="#chelianwang_section" data-section="chelianwang_section">车辆网产品</a></li>
+                    <li><a href="#zichan_section" data-section="zichan_section">资产管理平台</a></li>
+                    <li><a href="aboutUs.html">关于我们</a></li>
             </ul>
             <div class="menuIcon" id="menuIcon"><i class="iconfont icon-nav"></i></div>
         </div>
     </header>
-    <section>
-        
+    <!-- 第一屏 -->
+    <section id="index_section">
+        <div class="cti-welcome">
+          <div id="cti_welcome_slider" class="cti_welcome_slider">
+                <div class="cti-welcome-slide image">
+                    <a target="_blank" href="">
+                            <picture>
+                                <source srcset="images/banner01.png" media="(min-width: 1200px)" alt="">
+                                <source srcset="images/banner01b.jpg" media="(max-width: 768px)" alt="">
+                                <img srcset="images/banner01.png" alt="">
+                            </picture>
+                    </a>
+                </div>
+                <div class="cti-welcome-slide image">
+                    <a target="_blank" href="">
+                            <picture>
+                               <source srcset="images/banner02.png" media="(min-width: 1200px)" alt="">
+                               <source srcset="images/banner02b.jpg" media="(max-width: 768px)" alt="">
+                               <img srcset="images/banner02.png" alt="">
+                            </picture>
+                    </a>
+                </div>
+                <div class="cti-welcome-slide image">
+                    <a target="_blank" href="">
+                            <picture>
+                                <source srcset="" media="(max-width: 768px)" alt="">
+                                <img srcset="images/banner03.png" alt="">
+                            </picture>
+                    </a>
+                </div>
+                <div class="cti-welcome-slide image">
+                    <a target="_blank" href="">
+                            <picture>
+                                <source srcset="" media="(max-width: 768px)" alt="">
+                                <img srcset="images/banner04.png" alt="">
+                            </picture>
+                    </a>
+                </div>
+                <div class="cti-welcome-slide image">
+                    <a target="_blank" href="">
+                            <picture>
+                                <source srcset="" media="(max-width: 768px)" alt="">
+                                <img srcset="images/banner05.png" alt="">
+                            </picture>
+                    </a>
+                </div>
+                <div class="cti-welcome-slide image">
+                    <a target="_blank" href="">
+                            <picture>
+                                <source srcset="" media="(max-width: 768px)" alt="">
+                                <img srcset="images/banner06.png" alt="">
+                            </picture>
+                    </a>
+                </div>
+          </div>
+        </div>
     </section>
+    <!-- 第二屏 -->
+    <section id="dingzhi_section">
+         <div><img src="images/dingzhi.png"></div>
+    </section>
+    <section id="chelianwang_section">
+         <div><img src="images/chelianwang.png"></div>
+    </section>
+    <section id="chelianwang_section">
+        <div><img src="images/chelianwang.png"></div>
+        <div><img src="images/partner.png"></div>
+   </section>
+    <section id="zichan_section"></section>
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr-2.5.3.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/picturefill.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
