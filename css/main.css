@@ -58,14 +58,20 @@
         -o-transform: translate(-50%,0);
         transform: translate(-50%,0);
     }
+    .header_wrap .nav li a:hover:after{
+        background: #000;
+    }
     .header_wrap .nav li a.active:after{
         background: #000;
     }
     .menuIcon{
         display: none;
     }
-    #cti_welcome_slider{
+    .cti-welcome{
         padding-top: 70px;
+    }
+    .slick-slider {
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width:950px){
@@ -147,7 +153,10 @@
         font-size: 24px;
         color: #333;
     }
-    #cti_welcome_slider{
+    .cti-welcome{
         padding-top: 50px;
+    }
+    .slick-slider {
+        margin-bottom: 0;
     }
 }

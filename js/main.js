@@ -51,12 +51,12 @@ $(function(){
         if (evt.deltaY == -1) {
             //向下
            // $icons.addClass('d-hide');
-            var top = $('.dingzhi').offset().top - $('#header').height();
+            var top = $('#dingzhi_section').offset().top - $('#header').height();
             
             $('html,body').stop().animate({
                 scrollTop: top
             }, 'slow', function() {
-                _this.slidePrev();
+              
             });
         }
     });
@@ -87,19 +87,27 @@ $(function(){
         //TOP导航，滚动交互
         var scroll_array=[];
 
-        console.log($(".nav li").eq(0).find('a').attr('data-section').offset().top);
+        for(var i=0;i<$(".nav li").length-1;i++){
 
-        for(var i=0;i<$(".nav a").length;i++){
+            if(i==0){
+
+                scroll_array[i]=$("#"+$(".nav li").eq(i).find('a').attr('data-section')).offset().top;
+            }
+            else{
+
+               scroll_array[i]=$("#"+$(".nav li").eq(i).find('a').attr('data-section')).offset().top -70;
+            }
             
-
-            scroll_array[i]=$("#"+$(".nav li").eq(i).find('a').attr("data-section")).offset().top - 144;
+            console.log(scroll_array);
 
         }
         $(document).scroll(function(){
 
             if($(document).scrollTop() < 700){
 
-                $(".nav a").removeClass("active").eq(0).addClass("cur");
+                $(".nav li").find('a').removeClass("active").eq(0).addClass("active");
+
+                $(".nav li").eq(0).find('a').addClass("active");
 
             }else{
 
@@ -107,13 +115,17 @@ $(function(){
 
                     if($(document).scrollTop()>scroll_array[i]&&$(document).scrollTop()<scroll_array[i+1]){
 
-                        $(".nav a").removeClass("active").eq(i).addClass("active");
+                        $(".nav li a").removeClass("active");
+
+                        $(".nav li").eq(i).find('a').addClass('active');
 
                         return
 
                     }else{
 
-                        $(".nav a").removeClass("active").eq(i).addClass("active");
+                        $(".nav li a").removeClass("active");
+
+                        $(".nav li").eq(i).find('a').addClass('active');
 
                     }
                 }
@@ -124,24 +136,41 @@ $(function(){
     //懒加载
     /*$("img.lazy-img").lazyload({effect: "fadeIn",threshold :200});*/
 
-    if (winWidth <= 992) {
-
-
-    } else if (winWidth <= 768) {
-
-    } else {
-
         //导航锚点
         $(".nav a").on("click", function () {
-            console.log( $($(this).attr("href")).offset().top );
-            $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top + "px"
-            }, {
-                duration: 500,
-                easing: "swing"
-            });
+
+            var index = $(this).parent('li').index();       
+
+            if(index == 0){
+
+                        $("html,body").animate({
+
+                            scrollTop: $($(this).attr("href")).offset().top
+
+                        }, {
+
+                            duration: 500,
+
+                            easing: "swing"
+
+                        });
+            }
+            else{
+                $("html,body").animate({
+
+                    scrollTop: $($(this).attr("href")).offset().top - 70
+
+                }, {
+
+                    duration: 500,
+
+                    easing: "swing"
+
+                });
+            }
             return false;
+      
+      
         })   
 
-    }
 })
