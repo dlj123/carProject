@@ -12,7 +12,7 @@
 	<meta name="format-detection" content="telephone=no" /><!-- 禁止数字识别为电话号码 -->
 	<title></title>
     <link rel="stylesheet" type="text/css" href="css/amazeui.slick.css">
-    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/fullPage.js/2.9.5/jquery.fullpage.css">
     <link rel="stylesheet" type="text/css" href="css/bass.css">  
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -21,10 +21,10 @@
         <div class="header_wrap">
             <div class="logo"><img src="images/logo.png" alt="" title=""></div>
             <ul class="nav">
-                    <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
-                    <li data-menuanchor="page2"><a href="#page2">车辆定制</a></li>
-                    <li data-menuanchor="page3"><a href="#page3">车辆网产品</a></li>
-                    <li data-menuanchor="page4"><a href="#page4">资产管理平台</a></li>
+                    <li data-menuanchor="page1" class="active"><a href="#page1">首页<i></i></a></li>
+                    <li data-menuanchor="page2"><a href="#page2">车辆定制<i></i></a></li>
+                    <li data-menuanchor="page3"><a href="#page3">车辆网产品<i></i></a></li>
+                    <li data-menuanchor="page4"><a href="#page4">资产管理平台<i></i></a></li>
                     <li><a href="aboutUs.html">关于我们</a></li>
             </ul>
             <div class="menuIcon" id="menuIcon"><i class="iconfont icon-nav"></i></div>
@@ -86,7 +86,26 @@
                             </a>
                         </div>
                 </div>
-                <div class="mouse-btn"></div>
+                <div class="cti-welcome-icons">
+                    <!-- 分页器 -->
+                    <div class="cti-welcome-pagination"></div>
+                </div>
+                <!-- 分页器 //-->
+                <div class="cti-btn-next">
+                    <div class="d-table">
+                        <div class="d-cell">
+                            <span class="iconfont icon-jiantou d-icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cti-btn-prev">
+                    <div class="d-table">
+                        <div class="d-cell">
+                            <span class="iconfont icon-jiantou1 d-icon"></span>
+                        </div>
+                    </div>
+                </div>    
+                <div class="mouse-btn"><i class="iconfont icon-shubiaoxianxing"></i></div>
             </div>
         </div>
         <!-- 第二屏 -->
@@ -138,9 +157,9 @@
     <script type="text/javascript" src="js/modernizr-2.5.3.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/picturefill.min.js"></script>
-    <script type="text/javascript" src="js/easings.min.js"></script>
-    <script type="text/javascript" src="js/scrolloverflow.js"></script> 
-    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/fullPage.js/2.9.5/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script> 
+    <script type="text/javascript" src="https://cdn.bootcss.com/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
