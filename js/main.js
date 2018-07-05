@@ -2,7 +2,7 @@ $(function(){
    
     //轮播图全屏显示
     $('.cti-welcome').height($(window).height());
-    
+
     //小屏上导航菜单的显示和隐藏
     $('#header #menuIcon').on('click',function(){
     
@@ -42,135 +42,68 @@ $(function(){
 
         touchThreshold:5
     });
-    //监听鼠标滚轮
-     $('.cti-welcome').on('mousewheel', function(evt) {
+    $('.index-section').scroll(function(){
 
-        var _this = $(this);
+           console.log($(this).scrollTop());
 
-        //console.log(evt.deltaX, evt.deltaY, evt.deltaFactor);
-        if (evt.deltaY == -1) {
-            //向下
-           // $icons.addClass('d-hide');
-            var top = $('#dingzhi_section').offset().top - $('#header').height();
-            
-            $('html,body').stop().animate({
-                scrollTop: top
-            }, 'slow', function() {
-              
-            });
-        }
-    });
-    $('.cti-welcome').bind('mousewheel', function(e) {
-        scrollFunc(e);
-    });
-    //火狐下的鼠标滚动事件
-    $('.cti-welcome').bind('DOMMouseScroll', function(e) {
-        scrollFunc(e);
-    });
-
-    //阻止页面滚动
-    function scrollFunc(e) {
-        e = e || window.event;
-        if (e && e.preventDefault) {
-            e.preventDefault();
-            e.stopPropagation();
-        } else {
-            e.returnvalue = false;
-            return false;
-        }
-    }
-    //菜单高亮显示
-    var winWidth = parseInt($(window).width());
-
-    if(winWidth>992){
-
-        //TOP导航，滚动交互
-        var scroll_array=[];
-
-        for(var i=0;i<$(".nav li").length-1;i++){
-
-            if(i==0){
-
-                scroll_array[i]=$("#"+$(".nav li").eq(i).find('a').attr('data-section')).offset().top;
-            }
-            else{
-
-               scroll_array[i]=$("#"+$(".nav li").eq(i).find('a').attr('data-section')).offset().top -70;
-            }
-            
-            console.log(scroll_array);
-
-        }
-        $(document).scroll(function(){
-
-            if($(document).scrollTop() < 700){
-
-                $(".nav li").find('a').removeClass("active").eq(0).addClass("active");
-
-                $(".nav li").eq(0).find('a').addClass("active");
-
-            }else{
-
-                for(var i=0;i<scroll_array.length;i++){
-
-                    if($(document).scrollTop()>scroll_array[i]&&$(document).scrollTop()<scroll_array[i+1]){
-
-                        $(".nav li a").removeClass("active");
-
-                        $(".nav li").eq(i).find('a').addClass('active');
-
-                        return
-
-                    }else{
-
-                        $(".nav li a").removeClass("active");
-
-                        $(".nav li").eq(i).find('a').addClass('active');
-
-                    }
-                }
-            }
-        })
-    }
-
+          // if($(document).scrollTop())
+    })
+ 
     //懒加载
     /*$("img.lazy-img").lazyload({effect: "fadeIn",threshold :200});*/
 
-        //导航锚点
-        $(".nav a").on("click", function () {
+    //全屏切换
+    new fullpage('#content_wrap', {
+        //options here
+        autoScrolling:true,
 
-            var index = $(this).parent('li').index();       
+        anchors: ['page1', 'page2', 'page3', 'page4'],  //定义锚链接
 
-            if(index == 0){
+        scrollHorizontally: true,
 
-                        $("html,body").animate({
+        menu: '.nav', //绑定菜单，设定的相关属性与 anchors 的值对应后，菜单可以控制滚动
+       
+        verticalCentered:true,
 
-                            scrollTop: $($(this).attr("href")).offset().top
+        scrollOverflow: true,
 
-                        }, {
+        onLeave: function(origin, destination, direction){
+            
+            var loadedSection = this;
+    
+            //using index
 
-                            duration: 500,
+            if(origin.index == 0 && destination.index==1 ||  destination.index==2 || destination.index==3 || destination.index==4 || destination.index==5  && direction == 'down'){
 
-                            easing: "swing"
+               // alert("Section 2 ended loading");
+               $('#header').css('background','#fff');
 
-                        });
+               $('#content_wrap').css('padding-top','70px');
+
+               $('.header_wrap .nav li a').css('color','#333');
+
+               $('.header_wrap .nav li a:after').css('background','transparent');
+
+              // $('.header_wrap .nav li:hover a:after').css('background','#333');
+
+               $('.header_wrap .nav li.active a:after').css('background','#333');
+
             }
-            else{
-                $("html,body").animate({
+             else if(origin.index == 1 || origin.index == 2 || origin.index == 3 || origin.index == 4 || origin.index == 5 &&destination.index==0 && direction == 'up'){
+                 
+                $('#header').css('background','transparent');
 
-                    scrollTop: $($(this).attr("href")).offset().top - 70
+                $('#content_wrap').css('padding-top','70px');
 
-                }, {
+                $('.header_wrap .nav li a').css('color','#fff');
 
-                    duration: 500,
+                $('.header_wrap .nav li a:after').css('background','transparent');
+ 
+                $('.header_wrap .nav li:hover a:after').css('background','#fff');
 
-                    easing: "swing"
-
-                });
-            }
-            return false;
-      
-      
-        })   
-
+                $('.header_wrap .nav li.active a:after').css('background','#fff');
+             }
+        }
+    });   
+    
 })
