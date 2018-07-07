@@ -20,6 +20,7 @@ $(function(){
     })
 
     //首页轮播图
+
     $('#cti_welcome_slider').slick({
 
         autoplay:true,
@@ -74,116 +75,147 @@ $(function(){
     /*$("img.lazy-img").lazyload({effect: "fadeIn",threshold :200});*/
 
     //全屏切换菜单高亮
-    $('#content_wrap').fullpage({
-        //options here
-        autoScrolling:true,
+    function wholeScoll(){
 
-        anchors: ['page1', 'page2', 'page3', 'page4'],  //定义锚链接
-
-        scrollHorizontally: true,
-
-        menu: '.nav', //绑定菜单，设定的相关属性与 anchors 的值对应后，菜单可以控制滚动
-       
-        verticalCentered:true,
-
-        scrollOverflow: true,
-
-        onLeave:function(index, nextIndex, direction){
-
-           console.log(index, nextIndex, direction);
-
-           if(index == 1 && direction=='down'){
-
-               if(nextIndex==2 || nextIndex==3 || nextIndex==4){
-
-                    $('#header').css('background','#fff');
-
-             
+        $('#content_wrap').fullpage({
+            //options here
+            autoScrolling:true,
     
-                    $('.header_wrap .nav li a').css('color','#333');
-
-                    $('.header_wrap .nav li').find('i').css('background','transparent');
-
-                    $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
-
-               }
-           }
-           else if(index == 2 && direction=='down'){
-            
-            $('#header').css('background','#fff');
-
+            anchors: ['page1', 'page2', 'page3', 'page4'],  //定义锚链接
     
-
-            $('.header_wrap .nav li a').css('color','#333');
-
-            $('.header_wrap .nav li').find('i').css('background','transparent');
-
-            $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
+            scrollHorizontally: true,
     
+            menu: '.nav', //绑定菜单，设定的相关属性与 anchors 的值对应后，菜单可以控制滚动
+           
+            verticalCentered:true,
+    
+            scrollOverflow: true,
+    
+            afterLoad:function(anchorLink,index){
+    
+                console.log(anchorLink,index);
+    
+               if(anchorLink!=='page1' && index!==1){
 
-           }
-           else if(index == 3 && direction=='down'){
-               
-            $('#header').css('background','#fff');      
+                  if($(window).width()>950){
+    
+                    $('body').css('padding-top','70px');
 
-            $('.header_wrap .nav li a').css('color','#333');
+                  }
+                 else{
+                    $('body').css('padding-top','0px');
+                 }
+                }
+                else{
+                    $('body').css('padding-top','0px');
+                }
+            },
+    
+            onLeave:function(index, nextIndex, direction){
+    
+               console.log(index, nextIndex, direction);
 
-            $('.header_wrap .nav li').find('i').css('background','transparent');
+              if($(window).width()>950){
 
-            $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
+                                if(index == 1 && direction=='down'){
+                        
+                                    if(nextIndex==2 || nextIndex==3 || nextIndex==4){
+                        
+                                            $('#header').css('background','#fff');
+                        
+                            
+                                            $('.header_wrap .nav li a').css('color','#333');
+                        
+                                            $('.header_wrap .nav li').find('i').css('background','transparent');
+                        
+                                            $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
+                        
+                                    }
+                                }
+                                else if(index == 2 && direction=='down'){
+                                    
+                                    $('#header').css('background','#fff');                                         
+                        
+                                    $('.header_wrap .nav li a').css('color','#333');
+                        
+                                    $('.header_wrap .nav li').find('i').css('background','transparent');
+                        
+                                    $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
+                            
+                        
+                                }
+                                else if(index == 3 && direction=='down'){
+                                    
+                                    $('#header').css('background','#fff');                 
+                        
+                                    $('.header_wrap .nav li a').css('color','#333');
+                        
+                                    $('.header_wrap .nav li').find('i').css('background','transparent');
+                        
+                                    $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
+                        
+                                }
+                                else if(nextIndex==1 && direction=='up'){
+                        
+                                    if(index==2 || index==3 || index==4){
+                        
+                                        $('#header').css('background','transparent');                       
+                                    
+                                        $('.header_wrap .nav li a').css('color','#fff');
+                        
+                                        $('.header_wrap .nav li').find('i').css('background','transparent');
+                        
+                                        $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#fff');                       
+                                    
+                                    }
+                        
+                                }
+                                else if(nextIndex==2 && direction=='up'){
+                        
+                                        $('#header').css('background','#fff');                                                      
+                        
+                                        $('.header_wrap .nav li a').css('color','#333');
+                                        
+                                        $('.header_wrap .nav li').find('i').css('background','transparent');
+                        
+                                        $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
+                        
+                                }
+                                else if(nextIndex==3 && direction=='up'){
+                        
+                                        $('#header').css('background','#fff');    
+                                        
+                                    
+                        
+                                        $('.header_wrap .nav li a').css('color','#333');
+                                            
+                                        $('.header_wrap .nav li').find('i').css('background','transparent');
+                        
+                                        $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
+                        
+                                }
+                            else if(nextIndex==4 && direction=='up'){
+                        
+                                    $('#header').css('background','#fff');                       
+                                
+                                    $('.header_wrap .nav li a').css('color','#333');
+                                        
+                                    $('.header_wrap .nav li').find('i').css('background','transparent');
+                        
+                                    $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
+                        
+                                }
+                                else{
 
-           }
-           else if(nextIndex==1 && direction=='up'){
-
-            if(index==2 || index==3 || index==4){
-
-                $('#header').css('background','transparent');
-
-                $('.header_wrap .nav li a').css('color','#fff');
-
-                $('.header_wrap .nav li').find('i').css('background','transparent');
-
-                $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#fff');
-
-               
+                                    $('#header').css('background','#fff');
+                                                        
+                                    $('.header_wrap .nav li a').css('color','#333');
+                                        
+                                    $('.header_wrap .nav li').find('i').css('background','transparent');
+                                }
+                    }   
             }
-
-           }
-           else if(nextIndex==2 && direction=='up'){
-
-                $('#header').css('background','#fff');
-
-                $('.header_wrap .nav li a').css('color','#333');
-                
-                $('.header_wrap .nav li').find('i').css('background','transparent');
-
-                $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
-
-           }
-           else if(nextIndex==3 && direction=='up'){
-
-                $('#header').css('background','#fff');       
-
-                $('.header_wrap .nav li a').css('color','#333');
-                    
-                $('.header_wrap .nav li').find('i').css('background','transparent');
-
-                $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
-
-         }
-       else if(nextIndex==4 && direction=='up'){
-
-            $('#header').css('background','#fff');
-
-            $('.header_wrap .nav li a').css('color','#333');
-                
-            $('.header_wrap .nav li').find('i').css('background','transparent');
-
-            $('.header_wrap .nav li').eq(nextIndex-1).find('i').css('background','#333');
-
-        }
-
-        }
-    });   
-    
+         });   
+    }
+    wholeScoll();
 })
