@@ -1,0 +1,17 @@
+
+/*车辆定制详情*/
+.dingzhisec01_wrap{
+    width: 100%;
+    background:url(../images/dingzhiDt01.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    padding-top: 458px;
+    padding-left: 169px;
+    padding-bottom: 188px;  
+}
+.dingzhisec01_wrap h3{
+    font-size: 30px;
+    color: #fff;
+}
+.dingzhisec02_wrap{
+    
+}

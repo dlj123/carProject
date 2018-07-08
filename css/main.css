@@ -1,63 +1,253 @@
-@media screen and (min-width:1380px){
+@media screen and (min-width:1200px){
     .footer_wrap{
         width: 100%;
-        padding: 40px 20px 20px;
+        padding: 50px 0px 32px;
         background: #282828;
     }
     .footer_cont{
-        width:1380px;
+        width:1200px;
         margin: 0 auto;   
     }
-    .footmenu_wrap{
-        width: 100%;
-        padding-bottom: 30px;
-        border-bottom: 1px solid #666;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        flex-direction:row;
-        flex-wrap:nowrap;
-        justify-content:space-between;
-        align-items:center;
+    .footer_lf{
+       width:-webkit-calc(100% - 270px);
+       width:-moz-calc(100% - 270px);
+       width:-ms-calc(100% - 270px);
+       width:-o-calc(100% - 270px);
+       width:calc(100% - 270px);
+       padding-right: 80px;
+       float: left;
+    }
+    .foot_share{
+        width: 270px;
+        float: right;
+        font-size: 0;
+    }
+    .foot_share .weixin,.foot_share .sina{
+        display: inline-block;
+        width: 100px;
+    }
+    .foot_share .sina{
+        margin-left: 50px;
+    }
+    .foot_share .weixin span,.foot_share .sina span{
+        display: block;
+        width: 34px;
+        height: 28px;
+        margin: 15px auto 0;      
+    }
+    .foot_share .weixin span{
+        background: url("../images/weixin_icon.png") no-repeat left top;
+        background-size: cover;
+    }
+    .foot_share .sina span{
+        background: url("../images/sina_icon.png") no-repeat left top;
+        background-size: cover;
     }
     .foot_menu{
         width: 100%;
-        font-size: 0;
+        padding-left: 10px;
+        border-bottom: 1px solid #3a3a3a;
+        padding-bottom: 15px;
     }
     .foot_menu li{
-        display: inline-block;
-        vertical-align: top;    
+       float: left;
+       margin-bottom: 20px;
     }
     .foot_menu li a{
         display: block;
         font-size: 14px;
-        color: #666;
+        color: #8a8a8a;
         padding-right: 40px;
+    }
+    .foot_menu li:first-of-type a::before{
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        width: 18px;
+        height: 30px;
+        background: url("../images/phone_icon.png") no-repeat left top;
+        background-size: cover;
+        margin-right: 10px;
     }
     .foot_infos{
         width: 100%;
-        font-size: 0;
-        padding-top: 25px;
+        padding-top: 35px;
+        padding-left: 10px;
     }
     .foot_infos li{
-        display: inline-block;
-        vertical-align: top;
+        float: left;
         font-size: 14px;
-        color: #666;
-        line-height: 30px;
+        color: #8a8a8a;
+        margin-bottom: 15px;
     }
-    .foot_infos li:after{
+    .foot_infos li::after{
         display: inline-block;
         vertical-align: middle;
         content: "";
         width: 1px;
-        height: 12px;
-        background: #666;
-        margin: 0 45px;
+        height: 20px;
+        background: #8a8a8a;
+        margin: 0 24px;
+    }
+    .foot_infos li.first div{
+        display: inline-block;
+        font-size: 0
+    }
+    .foot_infos li.first div a{
+        display: inline-block;
+        font-size: 14px;
+        color: #8a8a8a;
+    }
+    .foot_infos li.first div a::after{
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        width: 1px;
+        height: 16px;
+        background: #8a8a8a;
+        margin: 0 10px;
+    }
+    .foot_infos li.first div a.last::after{
+        width: 0;    
+        margin: 0;
+        padding: 0;
+    }
+    .foot_infos li.last::after{
+       width: 0;
+       margin: 0;
+       padding: 0;
     }
 }
-
+@media screen and (max-width:1200px){
+    .footer_wrap{
+        width: 100%;
+        padding: 50px 20px 32px;
+        background: #282828;
+    }
+    .footer_cont{
+        width: 100%;
+    }
+    .footer_lf{
+        width: 100%;
+        float: none;
+    }
+    .foot_share{
+        width: 100%;
+        float: none;
+        font-size: 0;
+        padding-top: 30px;
+    }
+    .foot_share .weixin,.foot_share .sina{
+        display: inline-block;
+        width: 100px;
+    }
+    .foot_share .sina{
+        margin-left: 30px;
+    }
+    .foot_share .weixin span,.foot_share .sina span{
+        display: block;
+        width: 34px;
+        height: 28px;
+        margin: 15px auto 0;      
+    }
+    .foot_share .weixin span{
+        background: url("../images/weixin_icon.png") no-repeat left top;
+        background-size: cover;
+    }
+    .foot_share .sina span{
+        background: url("../images/sina_icon.png") no-repeat left top;
+        background-size: cover;
+    }
+    .foot_menu{
+        width: 100%;
+        padding-left: 10px;
+        border-bottom: 1px solid #3a3a3a;
+        padding-bottom: 15px;
+    }
+    .foot_menu li{
+       float: left;
+       margin-right: 25px;
+       margin-bottom: 10px;
+    }
+    .foot_menu li a{
+        display: block;
+        font-size: 14px;
+        color: #8a8a8a;
+    }
+    .foot_menu li:first-of-type a::before{
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        width: 18px;
+        height: 30px;
+        background: url("../images/phone_icon.png") no-repeat left top;
+        background-size: cover;
+        margin-right: 10px;
+    }
+    .foot_infos{
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+        padding-top: 25px;
+        padding-left: 10px;
+    }
+    .foot_infos li{
+        float: left;
+        font-size: 14px;
+        color: #8a8a8a;
+        margin-bottom: 5px;
+    }
+    .foot_infos li::after{
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        width: 1px;
+        height: 20px;
+        background: #8a8a8a;
+        margin: 0 24px;
+    }
+    .foot_infos li.first div{
+        display: inline-block;
+        font-size: 0;
+        line-height: 1.5;
+    }
+    .foot_infos li.first div a{
+        display: inline-block;
+        font-size: 14px;
+        color: #8a8a8a;
+        line-height: 1.5;
+    }
+    .foot_infos li.first div a::after{
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        width: 1px;
+        height: 16px;
+        background: #8a8a8a;
+        margin: 0 10px;
+    }
+    .foot_infos li.first div a.last::after{
+        width: 0;    
+        margin: 0;
+        padding: 0;
+    }
+    .foot_infos li.second::before{
+        display: inline-block;
+        vertical-align: top;
+        content: "";
+        line-height: 1.5;
+        width: 20px;
+        height: 22px;
+        background: url("../images/gongshang_icon.png") no-repeat left top;
+        background-size: cover;
+        margin-right: 8px;
+    }
+    .foot_infos li.last::after{
+       width: 0;
+       margin: 0;
+       padding: 0;
+    }
+}
 @media screen and (max-width:1145px) and (min-width:950px){
     .section05 .insec04_wrap{
         padding: 118px 0 110px;
@@ -278,7 +468,7 @@
         font-size: 30px;
         color: #fff;
     } 
-    .section02 .insec01_wrap,.section03 .insec02_wrap,.section04 .insec02_wrap{
+    .section02 .insec01_wrap,.section03 .insec02_wrap,.section04 .insec03_wrap{
         width: 100%;
         position: relative;
     }
@@ -857,19 +1047,3 @@
 }
 
 
-
-/*车辆定制详情*/
-.dingzhisec01_wrap{
-     width: 100%;
-     background:url(../images/dingzhiDt01.jpg) no-repeat 50% 50%;
-     padding-top: 458px;
-     padding-left: 169px;
-     padding-bottom: 188px;
-}
-.dingzhisec01_wrap h3{
-     font-size: 30px;
-     color: #fff;
-}
-.dingzhisec02_wrap{
-
-}
