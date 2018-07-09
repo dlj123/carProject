@@ -27,8 +27,6 @@ $(function(){
 
         autoplaySpeed:3000,
 
-        dots: true,
-
         fade:true,
 
         arrows:true,

@@ -49,6 +49,260 @@
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
+@media screen and (min-width:770px){
+    .dingzhisec02_list{
+        width: 770px;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        align-items:stretch;
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-bottom: 45px;
+   }
+   .dingzhisec02_list li{
+       flex: none;
+       width: 300px;
+       padding-top: 125px;
+       padding-bottom: 75px;
+       padding-left: 25px;
+       padding-right: 25px;
+       position: relative;
+       margin-right: 40px;
+       margin-bottom: 30px;
+   }
+   .dingzhisec02_list li .item_info{
+       height: 100%;
+       position: relative;
+       z-index: 9999;
+   }
+   .dingzhisec02_list li:last-of-type{
+       margin-right: 0;
+   }
+   .dingzhisec02_list li h5{
+       width: 100%;
+       text-align: center;
+       font-size: 28px;
+       color: #fff;
+       padding-bottom: 45px;
+       letter-spacing: 2px;      
+   }
+   .dingzhisec02_list li p{
+       width: 100%;
+       font-size: 16px;
+       color: #fff;
+       line-height: 1.5;
+       letter-spacing: 2px;
+   }
+   .dingzhisec02_list li .itembg{
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       -webkit-transform: skew(-12deg);
+       -moz-transform: skew(-12deg);
+       -ms-transform: skew(-12deg);
+       -o-transform: skew(-12deg);
+       transform: skew(-12deg);
+       margin-right: 60px;
+       border: solid 3px rgba(255, 255, 255, 0.1);
+       animation-fill-mode: both;
+       animation-delay: .9s;
+       -webkit-transition: .5s;   
+       -moz-transition: .5s; 
+       -ms-transition: .5s; 
+       -o-transition: .5s; 
+       transition: .5s;      
+   }
+   .dingzhisec02_list li .itembg div{
+       width: 100%;
+       height: 100%; 
+       overflow: hidden;
+   }
+   .dingzhisec02_list li .itembg div::before{
+       display: block;
+       content: "";
+       width: 100%;
+       height: 100%;
+       -webkit-transition: 2s ease;
+       -moz-transition: 2s ease;
+       -ms-transition: 2s ease;
+       -o-transition: 2s ease;
+       transition: 2s ease;     
+   }
+   .dingzhisec02_list li:hover .itembg div::before{
+       -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+       -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+       transform: scale(1.2);
+   }
+   .dingzhisec02_list li .itembg01 div:before{   
+       background: url("../images/guo.jpg") no-repeat 50% 50%;
+       background-size: cover;   
+   }
+   .dingzhisec02_list li:hover .itembg01 div:before{
+       background: url("../images/guo_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li .itembg02 div:before{
+       background: url("../images/ge.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li:hover .itembg02 div:before{
+       background: url("../images/ge_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li .itembg03 div:before{
+       background: url("../images/jiang.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li:hover .itembg03 div:before{
+       background: url("../images/jiang_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li .itembg04 div:before{
+       background: url("../images/you.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li:hover .itembg04 div:before{
+       background: url("../images/you_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+}
+@media screen and (min-width:1130px){
+    .dingzhisec02_list{
+        width: 1130px;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        align-items:stretch;
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-bottom: 45px;
+   }
+   .dingzhisec02_list li{
+       flex: none;
+       width: 300px;
+       padding-top: 125px;
+       padding-bottom: 75px;
+       padding-left: 25px;
+       padding-right: 25px;
+       position: relative;
+       margin-right: 40px;
+       margin-bottom: 30px;
+   }
+   .dingzhisec02_list li .item_info{
+       height: 100%;
+       position: relative;
+       z-index: 9999;
+   }
+   .dingzhisec02_list li:last-of-type{
+       margin-right: 0;
+   }
+   .dingzhisec02_list li h5{
+       width: 100%;
+       text-align: center;
+       font-size: 28px;
+       color: #fff;
+       padding-bottom: 45px;
+       letter-spacing: 2px;      
+   }
+   .dingzhisec02_list li p{
+       width: 100%;
+       font-size: 16px;
+       color: #fff;
+       line-height: 1.5;
+       letter-spacing: 2px;
+   }
+   .dingzhisec02_list li .itembg{
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       -webkit-transform: skew(-12deg);
+       -moz-transform: skew(-12deg);
+       -ms-transform: skew(-12deg);
+       -o-transform: skew(-12deg);
+       transform: skew(-12deg);
+       margin-right: 60px;
+       border: solid 3px rgba(255, 255, 255, 0.1);
+       animation-fill-mode: both;
+       animation-delay: .9s;
+       -webkit-transition: .5s;   
+       -moz-transition: .5s; 
+       -ms-transition: .5s; 
+       -o-transition: .5s; 
+       transition: .5s;      
+   }
+   .dingzhisec02_list li .itembg div{
+       width: 100%;
+       height: 100%; 
+       overflow: hidden;
+   }
+   .dingzhisec02_list li .itembg div::before{
+       display: block;
+       content: "";
+       width: 100%;
+       height: 100%;
+       -webkit-transition: 2s ease;
+       -moz-transition: 2s ease;
+       -ms-transition: 2s ease;
+       -o-transition: 2s ease;
+       transition: 2s ease;     
+   }
+   .dingzhisec02_list li:hover .itembg div::before{
+       -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+       -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+       transform: scale(1.2);
+   }
+   .dingzhisec02_list li .itembg01 div:before{   
+       background: url("../images/guo.jpg") no-repeat 50% 50%;
+       background-size: cover;   
+   }
+   .dingzhisec02_list li:hover .itembg01 div:before{
+       background: url("../images/guo_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li .itembg02 div:before{
+       background: url("../images/ge.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li:hover .itembg02 div:before{
+       background: url("../images/ge_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li .itembg03 div:before{
+       background: url("../images/jiang.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li:hover .itembg03 div:before{
+       background: url("../images/jiang_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li .itembg04 div:before{
+       background: url("../images/you.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li:hover .itembg04 div:before{
+       background: url("../images/you_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+}
 @media screen and (min-width:1490px){
     .dingzhisec02_list{
          width: 1490px;
@@ -220,6 +474,139 @@
         transform: scale(1);
     }
 }
+@media screen and (max-width:770px){
+    .dingzhisec02_list{
+        width: 100%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        align-items:stretch;
+        padding-top: 30px;
+        padding-left: 56px;
+        padding-bottom: 25px;
+   }
+   .dingzhisec02_list li{
+       flex: none;
+       width: -webkit-calc(50% - 25px);
+       width: -moz-calc(50% - 25px);
+       width: -ms-calc(50% - 25px);
+       width: -o-calc(50% - 25px);
+       width: calc(50% - 25px);
+       padding-top: 65px;
+       padding-bottom: 45px;
+       padding-left: 25px;
+       padding-right: 25px;
+       position: relative;
+       margin-bottom: 30px;
+   }
+   .dingzhisec02_list li:nth-of-type(odd){
+       margin-right: 15px;
+   }
+   .dingzhisec02_list li .item_info{
+       height: 100%;
+       position: relative;
+       z-index: 9999;
+   }
+   .dingzhisec02_list li:last-of-type{
+       margin-right: 0;
+   }
+   .dingzhisec02_list li h5{
+       width: 100%;
+       text-align: center;
+       font-size: 24px;
+       color: #fff;
+       padding-bottom: 45px;
+       letter-spacing: 2px;      
+   }
+   .dingzhisec02_list li p{
+       width: 100%;
+       font-size: 16px;
+       color: #fff;
+       line-height: 1.5;
+       letter-spacing: 2px;
+   }
+   .dingzhisec02_list li .itembg{
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       -webkit-transform: skew(-12deg);
+       -moz-transform: skew(-12deg);
+       -ms-transform: skew(-12deg);
+       -o-transform: skew(-12deg);
+       transform: skew(-12deg);
+       margin-right: 60px;
+       border: solid 3px rgba(255, 255, 255, 0.1);
+       animation-fill-mode: both;
+       animation-delay: .9s;
+       -webkit-transition: .5s;   
+       -moz-transition: .5s; 
+       -ms-transition: .5s; 
+       -o-transition: .5s; 
+       transition: .5s;      
+   }
+   .dingzhisec02_list li .itembg div{
+       width: 100%;
+       height: 100%; 
+       overflow: hidden;
+   }
+   .dingzhisec02_list li .itembg div::before{
+       display: block;
+       content: "";
+       width: 100%;
+       height: 100%;
+       -webkit-transition: 2s ease;
+       -moz-transition: 2s ease;
+       -ms-transition: 2s ease;
+       -o-transition: 2s ease;
+       transition: 2s ease;     
+   }
+   .dingzhisec02_list li:hover .itembg div::before{
+       -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+       -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+       transform: scale(1.2);
+   }
+   .dingzhisec02_list li .itembg01 div:before{   
+       background: url("../images/guo.jpg") no-repeat 50% 50%;
+       background-size: cover;   
+   }
+   .dingzhisec02_list li:hover .itembg01 div:before{
+       background: url("../images/guo_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li .itembg02 div:before{
+       background: url("../images/ge.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li:hover .itembg02 div:before{
+       background: url("../images/ge_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li .itembg03 div:before{
+       background: url("../images/jiang.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li:hover .itembg03 div:before{
+       background: url("../images/jiang_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li .itembg04 div:before{
+       background: url("../images/you.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+   .dingzhisec02_list li:hover .itembg04 div:before{
+       background: url("../images/you_h.jpg") no-repeat 50% 50%;
+       background-size: cover;
+   }
+}
 .dingzhisec03_wrap{
     width: 100%;
     background: #030409;
@@ -231,16 +618,26 @@
     background-size: cover;
     padding-bottom: 50px;
 }
-@media screen and (min-width:1140px){
-    
-    .showArea{
-        width: 1140px;
+@media screen and (min-width:1140px){  
+    .showArea{ 
+        width: 1140px;    
         height: 593px;
         position: relative;
         margin: 0 auto;
-     
     }
-    .showArea .originCar,.showArea .orderCar{
+    .showArea .originCar{
+        position: relative;    
+        width: 1140px;
+        height: 593px;
+        background: rgba(255,255,255,.2);
+        -webkit-transform: skew(-20deg);
+        -moz-transform: skew(-20deg);
+        -ms-transform: skew(-20deg);
+        -o-transform: skew(-20deg);
+        transform: skew(-20deg); 
+        z-index: 90;
+    }
+   .showArea .orderCar{
         position: absolute;    
         width: 1140px;
         height: 593px;
@@ -251,6 +648,7 @@
         -o-transform: skew(-20deg);
         transform: skew(-20deg); 
         z-index: 90;
+        overflow: hidden;
     }
     .showArea .originCar{
         left: -20px;
@@ -263,11 +661,16 @@
     .showArea .originCar.current,.showArea .orderCar.current{
         background: #fff;
         z-index: 92;
-        -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.3);
-        -moz-box-shadow: 2px 2px 5px rgba(0,0,0,.3);
-        -ms-box-shadow: 2px 2px 5px rgba(0,0,0,.3);
-        -o-box-shadow: 2px 2px 5px rgba(0,0,0,.3);
-        box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+        -webkit-box-shadow: 2px 5px 8px rgba(126, 74, 74, 0.4);
+        -moz-box-shadow: 2px 5px 8px rgba(0,0,0,.4);
+        -ms-box-shadow: 2px 5px 8px rgba(0,0,0,.4);
+        -o-box-shadow: 2px 5px 8px rgba(0,0,0,.4);
+        box-shadow: 2px 5px 8px rgba(0,0,0,.4);
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
     }
     .showArea .originCar::before,.showArea .originCar::after{
        position: absolute;
@@ -313,6 +716,144 @@
         font-size: 30px;
         color: #fff;
         z-index: 1000;
+        cursor: pointer;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+    }
+    .showArea .originCar button:hover,.showArea .orderCar button:hover{
+        background: #2971bb;
+    }
+    .showArea .originCar button{
+        left: 0;
+        top: 0;
+        border-top: 7px solid #2971bb;
+    }
+    .showArea .orderCar button{
+        bottom: 0;
+        right: 0;
+        border-bottom: 7px solid #2971bb;
+    }
+    .showArea .originCar.current button,.showArea .orderCar.current button{
+        background: #2971bb;
+    }
+}
+@media screen and (max-width:1140px){
+    .showArea{
+        width:-webkit-calc(100% - 80px);
+        width:-moz-calc(100% - 80px);
+        width:-ms-calc(100% - 80px);
+        width:-o-calc(100% - 80px);
+        width:calc(100% - 80px);
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .showArea .originCar{
+        position: relative;  
+        width:100%!important;
+        height: 450px!important;  
+       
+        background: rgba(255,255,255,.2);
+        -webkit-transform: skew(-20deg);
+        -moz-transform: skew(-20deg);
+        -ms-transform: skew(-20deg);
+        -o-transform: skew(-20deg);
+        transform: skew(-20deg); 
+        z-index: 90;
+    }
+    .showArea .orderCar{
+        position: absolute;  
+        width:100%!important;
+        height: 500px!important;  
+       
+        background: rgba(255,255,255,.2);
+        -webkit-transform: skew(-20deg);
+        -moz-transform: skew(-20deg);
+        -ms-transform: skew(-20deg);
+        -o-transform: skew(-20deg);
+        transform: skew(-20deg); 
+        z-index: 90;
+    }
+    .showArea .originCar{
+        left: -20px;
+        top: -45px;
+    }
+    .showArea .orderCar{
+        left: 15px;
+        top: 0;
+    }
+    .showArea .originCar.current,.showArea .orderCar.current{
+        background: #fff;
+        z-index: 92;
+        -webkit-box-shadow: 2px 5px 8px rgba(126, 74, 74, 0.4);
+        -moz-box-shadow: 2px 5px 8px rgba(0,0,0,.4);
+        -ms-box-shadow: 2px 5px 8px rgba(0,0,0,.4);
+        -o-box-shadow: 2px 5px 8px rgba(0,0,0,.4);
+        box-shadow: 2px 5px 8px rgba(0,0,0,.4);
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+    .showArea .originCar::before,.showArea .originCar::after{
+       position: absolute;
+       display: block;
+       content: "";
+       background: #64a2d2;
+    }
+    .showArea .originCar::before{
+        width: 218px;
+        height: 4px;
+        right: -40px;
+        top: -40px;
+    }
+    .showArea .originCar::after{
+        width: 4px;
+        height: 60px;
+        right: -40px;
+        top: -40px;
+    }
+    .showArea .orderCar::before,.showArea .orderCar::after{
+        position: absolute;
+        display: block;
+        content: "";
+        background: #64a2d2;
+     }
+     .showArea .orderCar::before{
+         width: 218px;
+         height: 4px;
+         bottom:-40px;
+         left: -40px;
+     }
+     .showArea .orderCar::after{
+         width: 4px;
+         height: 60px;
+         bottom:-40px;
+         left: -40px;
+     }
+    .showArea .originCar button,.showArea .orderCar button{
+        position: absolute;
+        width: 50px;
+        height: 154px;
+        background: #4d4d4d;
+        font-size: 30px;
+        color: #fff;
+        z-index: 1000;
+        cursor: pointer;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+    }
+    .showArea .originCar button:hover,.showArea .orderCar button:hover{
+        background: #2971bb;
     }
     .showArea .originCar button{
         left: 0;

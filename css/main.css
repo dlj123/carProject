@@ -167,7 +167,7 @@
     .foot_menu li{
        float: left;
        margin-right: 25px;
-       margin-bottom: 10px;
+       margin-bottom: 5px;
     }
     .foot_menu li a{
         display: block;
@@ -362,10 +362,15 @@
     .menuIcon{
         display: none;
     }
-    .slick-slider {
+    .slick-slider,.slick-slider .slick-list,.slick-slider .slick-track,picture {
+        display: block;
         margin-bottom: 0;
+        height: 100%;
     }
-
+    .slick-slide a{
+        display: block;
+        height: 100%;
+    }
     #content_wrap .section .fp-tableCell img{
         display: block;
         height:100%;
@@ -712,14 +717,21 @@
         font-size: 24px;
         color: #333;
     }
-    .slick-slider {
+    .slick-slider, .slick-list,.slick-slider .slick-track,picture{
+        display: block;
         margin-bottom: 0;
+        height: 100%;
+    }
+    .slick-slide a{
+        display: block;
+        height: 100%;
     }
     /*#content_wrap .section:nth-of-type(2) img,#content_wrap .section:nth-of-type(3) img,#content_wrap .section:nth-of-type(4) img,#content_wrap .section:nth-of-type(5) img{
         margin-top: 50px;
     }*/
     #content_wrap .section .fp-tableCell img{
         display: block;
+        height: 100%;
     }
     .cti-welcome{
         width: 100%;
@@ -732,7 +744,7 @@
         color: #fff
     }
     
-    .cti-welcome-pagination span {
+    .cti-welcome-pagination span{
         display: inline-block;
         height: 10px;
         width: 10px;
@@ -922,7 +934,7 @@
         font-size: 14px;
         color: #666;
         padding-right: 40px;
-        line-height: 30px;
+        line-height: 35px;
     }
     .foot_infos{
         width: 100%;
@@ -934,7 +946,7 @@
         vertical-align: top;
         font-size: 14px;
         color: #666;
-        line-height: 30px;
+        line-height: 35px;
     }
     .foot_infos li:after{
         display: inline-block;
@@ -946,7 +958,6 @@
         margin: 0 15px;
     }
 }
-
 
 .section05 .insec04_wrap{
        width: 100%;
