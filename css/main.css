@@ -412,8 +412,7 @@
     .cti-welcome .cti-btn-next {
         left: auto;
         right: 70px
-    }
-    
+    }   
     .cti-welcome .cti-btn-next .d-icon, .cti-welcome .cti-btn-prev .d-icon {
         display: block;
         /*background: url(../images/controls.png) no-repeat;*/
@@ -471,6 +470,7 @@
     .section02 .insec01_wrap,.section03 .insec02_wrap,.section04 .insec03_wrap{
         width: 100%;
         position: relative;
+        height: 100%;
     }
     .section02 .insec01_wrap .insec01_text,.section03 .insec02_wrap .insec02_text,.section04 .insec03_wrap .insec03_text{
         position: absolute;
@@ -720,7 +720,6 @@
     }*/
     #content_wrap .section .fp-tableCell img{
         display: block;
-        height:100%;
     }
     .cti-welcome{
         width: 100%;
