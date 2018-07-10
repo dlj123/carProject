@@ -720,6 +720,7 @@
     }*/
     #content_wrap .section .fp-tableCell img{
         display: block;
+        height: 100%;
     }
     .cti-welcome{
         width: 100%;
@@ -731,7 +732,6 @@
         text-align: center;
         color: #fff
     }
-    
     .cti-welcome-pagination span {
         display: inline-block;
         height: 10px;
