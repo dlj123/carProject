@@ -27,8 +27,6 @@ $(function(){
 
         autoplaySpeed:3000,
 
-        dots: true,
-
         fade:true,
 
         arrows:true,
@@ -104,10 +102,28 @@ $(function(){
                   }
                  else{
                     $('body').css('padding-top','0px');
+
+                    if(index !== 2 && index !== 3 && index !== 4){
+
+                        $.fn.fullpage.setAutoScrolling(false);
+
+                    }
+                    else{
+
+                        $.fn.fullpage.setAutoScrolling(true);
+                    }
                  }
+                }
+                else if(index==1){
+
+                    $.fn.fullpage.setAutoScrolling(true);
+
+                    $('body').css('padding-top','0px');
                 }
                 else{
                     $('body').css('padding-top','0px');
+
+                    $.fn.fullpage.setAutoScrolling(true);
                 }
             },
     

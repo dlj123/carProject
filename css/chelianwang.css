@@ -1,0 +1,550 @@
+@media screen and (min-width:950px){
+    .chelianwang_wrap{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .maintopPic01,.maintopPic02{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity:1;
+    }  
+    .maintopPic01{
+        background: url("../images/zichanBan02.jpg") no-repeat 50% 50%;
+        background-size: cover;
+        z-index: 3;
+    }
+    .maintopPic02{
+        background: url("../images/zichanBan01.jpg") no-repeat 50% 50%;
+        background-size: cover;
+        z-index: 1;
+    }
+    .maintopPic01.on,.maintopPic02.on{
+        z-index: 10;
+    }
+    .chelianwang_wrap .wenzi{
+        font-size: 32px;
+        color: #fff;
+        position: absolute;
+        left: 10%;
+        bottom: 15%;
+        z-index: 80;
+        letter-spacing: 2px;
+        opacity: 0;
+        -webkit-transition: all ease .6s;
+        -moz-transition: all ease .6s;
+        -ms-transition: all ease .6s;
+        -o-transition: all ease .6s;
+        transition: all ease .6s;
+        opacity: 0;
+        -webkit-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -moz-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -ms-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -o-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+    }
+    .chelianwang_wrap .wenzi.show{
+        opacity: 1;
+    }
+    .chelianwang_lab_wrap{
+        width: 100%;
+        background: #000;
+        padding: 30px 0;
+    }
+    .chelianwang_lab{
+       width: 100%;
+       position: relative;
+       background: url("../images/chelianwang_lab.jpg") no-repeat 50% 50%;
+       background-size: cover;
+       padding-top: 485px;
+    }
+    .chelianwang_lab .chelianwang_lab_wenzi{
+        width: 30%;
+        position: absolute;
+        right: 0;
+        bottom: 90px;
+        padding-right:60px;
+    }
+    .chelianwang_lab .chelianwang_lab_wenzi h3{
+       width: 100%;
+       font-size: 28px;
+       color: #fff;
+       padding-bottom: 30px;
+       letter-spacing: 2px;
+       -webkit-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+       -moz-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+       -ms-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+       -o-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+       text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+    }
+    .chelianwang_lab .chelianwang_lab_wenzi p{
+       width: 100%;
+       font-size: 16px;
+       color: #fff;
+       line-height: 1.4;
+       letter-spacing: 2px;
+       font-style: normal;
+       font-weight: 100;
+    }
+    .chelianwang_adv_wrap{
+        width: 100%;
+        background: #000;
+        padding-bottom: 30px;
+    }
+    .chelianwang_adv{
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        align-items:stretch;
+    }
+    .chelianwang_adv li{
+
+        width: 50%;
+        flex: none;
+        border:2px solid #8d8d8d;
+        margin-top: -2px;       
+        padding-top: 300px;
+        padding-left:80px;
+        padding-right: 80px;
+        padding-bottom: 45px;
+        position: relative;
+        overflow: hidden;
+    }
+    .chelianwang_adv li:nth-of-type(even){
+      border-left: 0;
+      border-right: 0;
+    }
+    .chelianwang_adv li:nth-of-type(odd){
+        border-left: 0;
+      }
+    .chelianwang_adv li .chelianwang_adv_bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: 2s ease;
+        -moz-transition: 2s ease;
+        -ms-transition: 2s ease;
+        -o-transition: 2s ease;
+        transition: 2s ease;     
+    }
+    .chelianwang_adv li:hover .chelianwang_adv_bg{
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    .chelianwang_adv li.chelianwang_adv_item01 .chelianwang_adv_bg{
+       background: url("../images/adv01.jpg") no-repeat 50% 50%;
+       background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item02 .chelianwang_adv_bg{
+        background: url("../images/adv02.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item03 .chelianwang_adv_bg{
+        background: url("../images/adv03.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item04 .chelianwang_adv_bg{
+        background: url("../images/adv04.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item01:hover .chelianwang_adv_bg{
+        background: url("../images/adv01_h.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item02:hover .chelianwang_adv_bg{
+        background: url("../images/adv02_h.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item03:hover .chelianwang_adv_bg{
+        background: url("../images/adv03_h.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item04:hover .chelianwang_adv_bg{
+        background: url("../images/adv04_h.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv .chelianwang_adv_info{
+        position: relative;
+        z-index: 999;
+    }
+    .chelianwang_adv .chelianwang_adv_info h3{
+        width: 100%;
+        font-size: 28px;
+        color: #fff;
+        padding-bottom: 30px;
+    }
+    .chelianwang_adv .chelianwang_adv_info p{
+        width: 100%;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 100;
+        line-height: 1.5;
+    }
+    .chelianwang_future_wrap{
+        width: 100%;
+        background: #000;
+        padding-bottom: 55px;
+    }
+    .chelianwang_future{
+        width: 100%;
+        padding: 510px 10% 220px;
+        background: url("../images/chelianwang_future.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_future h3{
+        width: 60%;
+        font-size: 28px;
+        color: #fff;
+        padding-bottom: 30px;
+        letter-spacing: 2px;
+        -webkit-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -moz-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -ms-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -o-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+     }
+     .chelianwang_future p{
+        width: 60%;
+        font-size: 16px;
+        color: #fff;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        font-style: normal;
+        font-weight: 100;
+     }
+    
+   
+}
+@media screen and (min-width:1440px){
+    .chelianwang_adv li{
+        width: 50%;
+        flex: none;
+        border:2px solid #8d8d8d;
+        margin-top: -2px;       
+        padding-top: 550px;
+        padding-left:120px;
+        padding-right: 120px;
+        padding-bottom: 65px;
+        position: relative;
+        overflow: hidden;
+    }
+        .chelianwang_future h3{
+            font-size: 34px;
+        }
+        .chelianwang_future p{
+            font-size: 16px;
+        }
+        .chelianwang_future h3{
+            font-size: 36px;
+        }
+        .chelianwang_future p{
+            font-size: 18px;
+        }
+        .chelianwang_wrap .wenzi{
+            font-size: 42px;
+        }
+        .chelianwang_lab .chelianwang_lab_wenzi h3{
+            font-size: 36px;
+        }
+        .chelianwang_lab .chelianwang_lab_wenzi p{
+            font-size: 18px;
+        }
+    }
+@media screen and (max-width:950px){
+    .chelianwang_wrap{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .maintopPic01,.maintopPic02{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity:1;
+    }  
+    .maintopPic01{
+        background: url("../images/zichanBan02.jpg") no-repeat 50% 50%;
+        background-size: cover;
+        z-index: 3;
+    }
+    .maintopPic02{
+        background: url("../images/zichanBan01.jpg") no-repeat 50% 50%;
+        background-size: cover;
+        z-index: 1;
+    }
+    .maintopPic01.on,.maintopPic02.on{
+        z-index: 10;
+    }
+    .chelianwang_wrap .wenzi{
+        font-size: 26px;
+        color: #fff;
+        position: absolute;
+        left: 10%;
+        bottom: 15%;
+        z-index: 80;
+        letter-spacing: 2px;
+        opacity: 0;
+        -webkit-transition: all ease .6s;
+        -moz-transition: all ease .6s;
+        -ms-transition: all ease .6s;
+        -o-transition: all ease .6s;
+        transition: all ease .6s;
+        opacity: 0;
+        -webkit-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -moz-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -ms-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -o-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+    }
+    .chelianwang_wrap .wenzi.show{
+        opacity: 1;
+    }
+    .chelianwang_lab_wrap{
+        width: 100%;
+        background: #000;
+        padding: 30px 0;
+    }
+    .chelianwang_lab{
+       width: 100%;
+       position: relative;
+       background: url("../images/chelianwang_lab.jpg") no-repeat 50% 50%;
+       background-size: cover;
+       padding-top: 355px;
+    }
+    .chelianwang_lab .chelianwang_lab_wenzi{
+        width: 60%;
+        position: absolute;
+        right: 0;
+        bottom: 40px;
+        padding-right:60px;
+    }
+    .chelianwang_lab .chelianwang_lab_wenzi h3{
+       width: 100%;
+       font-size: 20px;
+       color: #fff;
+       padding-bottom: 30px;
+       letter-spacing: 2px;
+       -webkit-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+       -moz-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+       -ms-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+       -o-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+       text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+    }
+    .chelianwang_lab .chelianwang_lab_wenzi p{
+       width: 100%;
+       font-size: 15px;
+       color: #fff;
+       line-height: 1.4;
+       letter-spacing: 2px;
+       font-style: normal;
+       font-weight: normal;
+    }
+    .chelianwang_adv_wrap{
+        width: 100%;
+        background: #000;
+        padding-bottom: 30px;
+    }
+    .chelianwang_adv{
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        align-items:stretch;
+    }
+    .chelianwang_adv li{
+        width: 50%;
+        flex: none;
+        border:2px solid #8d8d8d;
+        margin-top: -2px;
+        padding-top:200px;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-bottom: 35px;
+        position: relative;
+        overflow: hidden;
+    }
+    .chelianwang_adv li:nth-of-type(even){
+      border-left: 0;
+      border-right: 0;
+    }
+    .chelianwang_adv li:nth-of-type(odd){
+        border-left: 0;
+      }
+    .chelianwang_adv li .chelianwang_adv_bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: 2s ease;
+        -moz-transition: 2s ease;
+        -ms-transition: 2s ease;
+        -o-transition: 2s ease;
+        transition: 2s ease;     
+    }
+    .chelianwang_adv li:hover .chelianwang_adv_bg{
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    .chelianwang_adv li.chelianwang_adv_item01 .chelianwang_adv_bg{
+       background: url("../images/adv01.jpg") no-repeat 50% 50%;
+       background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item02 .chelianwang_adv_bg{
+        background: url("../images/adv02.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item03 .chelianwang_adv_bg{
+        background: url("../images/adv03.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item04 .chelianwang_adv_bg{
+        background: url("../images/adv04.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item01:hover .chelianwang_adv_bg{
+        background: url("../images/adv01_h.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item02:hover .chelianwang_adv_bg{
+        background: url("../images/adv02_h.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item03:hover .chelianwang_adv_bg{
+        background: url("../images/adv03_h.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv li.chelianwang_adv_item04:hover .chelianwang_adv_bg{
+        background: url("../images/adv04_h.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_adv .chelianwang_adv_info{
+        position: relative;
+        z-index: 999;
+    }
+    .chelianwang_adv .chelianwang_adv_info h3{
+        width: 100%;
+        font-size: 20px;
+        color: #fff;
+        padding-bottom: 20px;
+    }
+    .chelianwang_adv .chelianwang_adv_info p{
+        width: 100%;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 100;
+        line-height: 1.5;
+        font-weight: normal;
+    }
+    .chelianwang_future_wrap{
+        width: 100%;
+        background: #000;
+        padding-bottom: 25px;
+    }
+    .chelianwang_future{
+        width: 100%;
+        padding: 350px 10% 150px;
+        background: url("../images/chelianwang_future.jpg") no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .chelianwang_future h3{
+        width: 60%;
+        font-size: 22px;
+        color: #fff;
+        padding-bottom: 30px;
+        letter-spacing: 2px;
+        -webkit-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -moz-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -ms-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        -o-text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+        text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+     }
+     .chelianwang_future p{
+        width: 60%;
+        font-size: 16px;
+        color: #fff;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        font-style: normal;
+        font-weight: normal;
+     }
+}
+@media screen and (max-width:750px){
+    .chelianwang_lab{
+        padding-top:400px;
+    }
+    .chelianwang_lab_wrap{
+        padding: 25px 0;
+    }
+    .chelianwang_adv_wrap{
+        padding-bottom: 25px;
+    }
+    .chelianwang_lab .chelianwang_lab_wenzi{
+        width: 100%;
+        padding-right:30px;
+        padding-left: 30px;
+    }
+    .chelianwang_lab .chelianwang_lab_wenzi h3{
+        font-size: 16px;
+    }
+    .chelianwang_lab .chelianwang_lab_wenzi p{
+        font-size: 14px;
+    }
+    .chelianwang_adv li{
+        padding-top: 30px;
+        padding-left:15px;
+        padding-right: 15px;
+    }
+    .chelianwang_future{
+        padding: 40px 5% 150px;
+    }
+    .chelianwang_adv .chelianwang_adv_info h3{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .chelianwang_adv .chelianwang_adv_info p{
+        font-size: 14px;
+    }
+    .chelianwang_future h3{
+        width: 100%;
+        font-weight: normal;
+        font-size: 16px;
+       
+    }
+    .chelianwang_future p{
+        width: 100%;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .chelianwang_adv li {
+        padding-top:200px;
+        padding-bottom: 60px;
+        width: 100%;
+        border: 0;
+        margin-left: 0;
+        margin-top: 0;
+        border-bottom: 1px solid #fff;
+    }
+}
