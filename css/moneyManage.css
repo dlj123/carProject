@@ -27,18 +27,18 @@
     padding-bottom: 110px;
     position: relative;
 }
-.dataServer_tit,.useOccasion_tit,.useScene_tit{
+.dataServer_tit,.useOccasion_tit,.useScene_tit,.palteAdv_tit{
     width: 180px;
     display: block;
     left: 10%;
     top: 0;
     position: absolute;
 }
-.dataServer_tit img,.useOccasion_tit img,.useScene_tit img{
+.dataServer_tit img,.useOccasion_tit img,.useScene_tit img,.palteAdv_tit img{
     display: block;
     max-width: 100%;  
 }
-.dataServer_tit span,.useOccasion_tit span,.useScene_tit span{
+.dataServer_tit span,.useOccasion_tit span,.useScene_tit span,.palteAdv_tit span{
     display: block;
     width: 100%;
     text-align: center;
@@ -224,7 +224,7 @@
     position: relative;
 }
 .useSceneList_wrap{
-    width: 65%;
+    width: 68%;
     margin: 0 auto;
 }
 .useSceneList{
@@ -246,27 +246,138 @@
     position: relative;
 }
 .useSceneList li .info{
-    width: 50%;
+    width: 55%;
     height: 100%;
     background: #ecedf0;
     border: 2px solid #c2c4c7;
     border-radius: 10px;
+    padding: 20px;
 }
 .useSceneList li .info p{
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     color: #191919;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 35px;
+    line-height: 1.3;
 }
-.useSceneList li .point_icon{
-    width: 500px;
+.useSceneList li .info p:last-of-type{
+    margin-bottom: 0;
+}
+.useSceneList li .info p::before{
     display: block;
     position: absolute;
-    left:50%;
-    top: -40px;
-    background: url("../images/scene01.png") no-repeat 50% 50%;
-    background-size: cover;  
+    top: 0;
+    left: 0;
+    content: "";
+    width: 18px;
+    height: 22px;
+    background: url("../images/item_point01.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.useSceneList li .point_icon{
+    width: 80%;
+    display: block;
+    position: absolute;
+    opacity: .9;
+}
+.useSceneList li.item01 .point_icon{
+    left:55%;
+    top: -20px; 
+    z-index: 100;
+    margin-left: -2px;
+}
+.useSceneList li.item02 .point_icon{
+    right:55%;
+    top: 70px; 
+    z-index: 99;
+    margin-right: -2px;
+}
+.useSceneList li.item03 .point_icon{
+   left:55%;
+    top: -75px;
+    z-index: 98;
+    margin-left: -2px;
+}
+.useSceneList li.item04 .point_icon{
+    right:55%;
+    top: 10px;
+    margin-right: -2px;
 }
 .useSceneList li:nth-of-type(even) .info{
-    margin-left: 50%;
+    margin-left: 45%;
+}
+.palteAdv_wrap{
+    width: 100%;
+    background: #000;
+    padding-bottom: 30px;
+}
+.palteAdv{
+    width: 100%;
+    background: url("../images/palteAdv_bg.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+.palteAdv_list{
+    width: 100%;
+    padding:350px 6% 90px; 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:stretch;
+}
+.palteAdv_list li{
+    width: 20%;
+    padding:0px;
+    flex: none;
+}
+.palteAdv_list li .infos{
+    width: 100%;
+   
+    background: #fff;
+    -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+.palteAdv_list li .infos h5{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #1e62bd;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.palteAdv_list li .infos span{
+    display: block;
+    margin: 60px 0;
+}
+.palteAdv_list li .infos .intro{
+    width: 100%;
+    padding: 0 30px 40px;
+}
+.palteAdv_list li .infos .intro p{
+    display: block;
+    width: 100%;
+    position: relative;
+    font-size: 14px;
+    color: #1a1a1a;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    padding-left: 30px;
+}
+.palteAdv_list li .infos .intro p::before{
+    display: block;
+    content: "";
+    width: 17px;
+    height: 14px;
+    background: url("../images/item_point01.png") no-repeat 50% 50%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top:0;
 }
