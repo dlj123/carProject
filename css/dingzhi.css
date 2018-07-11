@@ -184,15 +184,19 @@
 }
 .showArea_wrap{
     width: 100%;    
-    height: 420px;    
-    padding: 0 60px 0 90px;
+    height: 480px;    
+    padding: 0 60px 60px 90px;
     margin-top: 60px;
     transition: all ease .2s;
+}
+.showArea_wrap::before.，.showArea_wrap::after{
+    display: table;
+    content: "";
 }
 .showArea{ 
     width: 100%;
     position: relative;
-    height: 393px;
+    height: 420px;
 }
 .showArea .originCar{
     position: relative;    
@@ -224,8 +228,8 @@
     background-position:50% 50%!important;
 }
 .showArea .originCar{
-    left: -45px;
-    top: -45px;
+    left: -35px;
+    top: -35px;
 }
 .showArea .orderCar{
     left: 0px;
@@ -283,10 +287,10 @@
  }
 .showArea .originCar button,.showArea .orderCar button{
     position: absolute;
-    width: 50px;
+    width: 35px;
     height: 154px;
     background: #4d4d4d;
-    font-size: 30px;
+    font-size: 22px;
     color: #fff;
     z-index: 1000;
     cursor: pointer;
@@ -322,7 +326,7 @@
     .showArea .originCar{
         position: relative;    
         width: 100%!important;
-        height: 593px!important;
+        height: 493px!important;
     }
         .showArea .orderCar{
             position: absolute;    
@@ -463,7 +467,7 @@
         margin-left: 30px;
     }
     .dingzhisec02_wrap .title span,.dingzhisec03_wrap .title span{
-        font-size: 20px;
+        font-size: 30px;
     }
     .showArea_wrap{
         width: 100%;    
@@ -479,7 +483,7 @@
     .showArea .originCar{
         position: relative;    
         width: 100%!important;
-        height: 593px;
+        height: 593px!important;
         background: rgba(255,255,255,.2);
         -webkit-transform: skew(0deg);
         -moz-transform: skew(0deg);
@@ -491,7 +495,7 @@
    .showArea .orderCar{
         position: absolute;    
         width: 100%!important;
-        height: 593px;
+        height: 593px!important;
         background: rgba(255,255,255,.2);
         -webkit-transform: skew(0deg);
         -moz-transform: skew(0deg);
@@ -591,6 +595,10 @@
     }
 }
 @media screen and (min-width:1490px){
+    .dingzhisec01_wrap h3{
+        font-size: 40px;
+        color: #fff;
+    }
     .dingzhisec02_list{
          width: 1490px;
          margin: 0 auto;
@@ -760,6 +768,19 @@
         -o-transform: scale(1);
         transform: scale(1);
     }
+    .dingzhisec02_wrap .title,.dingzhisec03_wrap .title{
+        width: 200px;
+        margin-left: 10%;
+    }
+    .dingzhisec02_wrap .title span,.dingzhisec03_wrap .title span{
+        font-size: 36px;
+    }
+    .showArea_wrap{
+        width: 100%;    
+        height: 593px;    
+        padding: 0 180px 0 160px;
+        transition: all ease .2s;
+    }
     .showArea{ 
         width: 1140px;    
         height: 593px;
@@ -768,8 +789,8 @@
     }
     .showArea .originCar{
         position: relative;    
-        width: 1140px;
-        height: 593px;
+        width: 1140px!important;
+        height: 593px!important;
         background: rgba(255,255,255,.2);
         -webkit-transform: skew(-20deg);
         -moz-transform: skew(-20deg);
@@ -780,8 +801,8 @@
     }
    .showArea .orderCar{
         position: absolute;    
-        width: 1140px;
-        height: 593px;
+        width: 1140px!important;
+        height: 593px!important;
         background: rgba(255,255,255,.2);
         -webkit-transform: skew(-20deg);
         -moz-transform: skew(-20deg);
@@ -789,7 +810,7 @@
         -o-transform: skew(-20deg);
         transform: skew(-20deg); 
         z-index: 90;
-        overflow: hidden;
+       
     }
     .showArea .originCar{
         left: -20px;
@@ -892,11 +913,6 @@
     background-size: cover;
     padding-bottom: 50px;
 }
-
-
-
-
-
 @media screen and (max-width:770px){
     .dingzhisec01_wrap h3{
         font-size: 24px;
@@ -1119,10 +1135,10 @@
  }
 .showArea .originCar button,.showArea .orderCar button{
     position: absolute;
-    width: 50px;
+    width: 40px;
     height: 154px;
     background: #333;
-    font-size: 28px;
+    font-size: 24px;
     color: #fff;
     z-index: 1000;
     cursor: pointer;

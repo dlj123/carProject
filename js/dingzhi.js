@@ -82,8 +82,7 @@ $(function(){
             
             $("#orderCar").removeClass('current');
             $("#originCar").addClass('current');
-            originInit();
-          
+            originInit();         
         }
     })
 })

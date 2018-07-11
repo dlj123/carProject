@@ -1,0 +1,272 @@
+.moneyMantop_wrap{
+    width: 100%;
+    background: #000;
+    padding-bottom: 20px;
+}
+.moneyMantop{
+    width: 100%;
+    padding: 420px 0 200px 15%;
+    background: url("../images/moneyMan_top.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.moneyMantop p{
+    display: block;
+    width: 100%;
+    font-size: 42px;
+    color: #fff;
+}
+.dataServer_wrap{
+    width: 100%;
+    background: #000;
+    padding-bottom: 20px;
+}
+.dataServer{
+    width: 100%;
+    background: url("../images/dataSever_bg.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    padding-bottom: 110px;
+    position: relative;
+}
+.dataServer_tit,.useOccasion_tit,.useScene_tit{
+    width: 180px;
+    display: block;
+    left: 10%;
+    top: 0;
+    position: absolute;
+}
+.dataServer_tit img,.useOccasion_tit img,.useScene_tit img{
+    display: block;
+    max-width: 100%;  
+}
+.dataServer_tit span,.useOccasion_tit span,.useScene_tit span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    -moz-text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    -ms-text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    -o-text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+.useOccasion_tit span,.useScene_tit span{
+    line-height: 1.1;
+    text-align: left;
+    padding-left: 35px;
+}
+.useOccasion_tit span em,.useScene_tit span em{
+    font-size: 18px;
+    color: #fff;
+}
+.dataServer_cont{
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:center;
+    padding-top: 135px;
+}
+.dataServer_info{
+    width: 45%;
+    flex: none;
+    padding-left: 90px;
+}
+.dataServer_info>div{
+    display: block;
+    width: 84%;
+    background: url("../images/dataServer_info.png") no-repeat 50% 50%;
+    background-size: contain;
+    padding: 72px 125px;
+    margin: 0 auto;
+}
+.dataServer_info>div p{
+    width: 100%;
+    font-size: 28px;
+    color: #fefefe;
+    line-height: 1.8;
+}
+.dataServer_pic{
+    width: 55%;
+    flex: none;
+}
+.dataServer_pic>div{
+    width: 70%;
+    margin: 0 auto;
+}
+.dataServer_pic>div img{
+    display: block;
+    max-width: 100%;
+}
+.useOccasion_wrap{
+    width: 100%;
+    background: #000;
+    padding-bottom: 20px;
+}
+.useOccasion{
+    width: 100%;
+    background: #111111;
+    position: relative;
+    padding-top: 280px;
+    padding-bottom: 50px;
+}
+.useOccasion_list{
+    width: 100%;
+}
+.useOccasion_list li{
+    width: 100%;
+    border-bottom: 2px solid #333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:stretch;
+}
+.useOccasion_list li .item_pic,.useOccasion_list li .item_info{
+    flex: none;
+}
+.useOccasion_list li .item_pic{
+    overflow: hidden;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip:border;
+    background-origin:border;
+}
+.useOccasion_list li.item01 .item_pic{
+    width: 70%;
+    background-image: url("../images/useOccasion_pic01.jpg");
+}
+.useOccasion_list li.item02 .item_pic{
+    width: 70%;
+    background-image: url("../images/useOccasion_pic02.jpg");
+}   
+.useOccasion_list li.item03 .item_pic{
+    width: 55%;
+    background-image: url("../images/useOccasion_pic03.jpg");
+}  
+.useOccasion_list li .item_info{
+    position: relative;
+    padding:65px 10px;
+    text-align: center; 
+    position: relative; 
+}
+.useOccasion_list li.item01 .item_info{
+    width: 30%;
+    background: #394657;
+}
+.useOccasion_list li.item02 .item_info{
+    width: 30%;
+    background: #40393e;
+}
+.useOccasion_list li.item03 .item_info{
+    width: 45%;
+    background: #aeb6c9;
+}
+.useOccasion_list li .item_info::before{
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    top: 0;
+}
+.useOccasion_list li.item01 .item_info::before{
+    background: #394657;
+    left: -150px;
+    width: 150px;
+    -webkit-clip-path:polygon(100% 0%, 100% 100%, 0 100%);
+    clip-path:polygon(100% 0%, 100% 100%, 0 100%);
+}
+.useOccasion_list li.item02 .item_info::before{
+    background: #40393e;
+    right: -150px;
+    width: 150px;
+    -webkit-clip-path:polygon(0% 0%, 100% 0%, 0 100%);
+    clip-path:polygon(0% 0%, 100% 0%, 0 100%);
+}
+.useOccasion_list li.item03 .item_info::before{
+    background: #aeb6c9;
+    left: -149px;
+    width: 150px;
+    -webkit-clip-path:polygon(100% 0%, 100% 100%, 0 100%);
+    clip-path:polygon(100% 0%, 100% 100%, 0 100%);
+}
+.useOccasion_list li .item_info p{
+    font-size: 26px;
+    color: #fff;
+}
+.useScene_wrap{
+    width: 100%;
+    background: #000;
+    padding-bottom: 20px;
+}
+.useScene{
+    width: 100%;
+    padding-top: 250px;
+    background: url("../images/useScene_bg.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+.useSceneList_wrap{
+    width: 65%;
+    margin: 0 auto;
+}
+.useSceneList{
+   width: 100%;
+   display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:stretch;
+}
+.useSceneList li{
+    width: 50%;
+    flex: none;
+    position: relative;
+    margin-bottom: 50px;
+    position: relative;
+}
+.useSceneList li .info{
+    width: 50%;
+    height: 100%;
+    background: #ecedf0;
+    border: 2px solid #c2c4c7;
+    border-radius: 10px;
+}
+.useSceneList li .info p{
+    width: 100%;
+    font-size: 18px;
+    color: #191919;
+    margin-bottom: 8px;
+}
+.useSceneList li .point_icon{
+    width: 500px;
+    display: block;
+    position: absolute;
+    left:50%;
+    top: -40px;
+    background: url("../images/scene01.png") no-repeat 50% 50%;
+    background-size: cover;  
+}
+.useSceneList li:nth-of-type(even) .info{
+    margin-left: 50%;
+}
